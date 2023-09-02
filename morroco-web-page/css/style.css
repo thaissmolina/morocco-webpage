@@ -132,95 +132,100 @@ nav .fas{
 
 
 .actividades {
-    width: 80%;
-    margin: auto;
+    width: 100%;
     text-align: center;
     padding-top: 100px;
+    margin-left: 0%;
+    margin-right: 0%;
+
+
+}
+
+.actividades h1{
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
     
 }
 
-.row {
+
+ .row {
     display: flex;
-    flex-basis: 32%;
-    padding-top: 5%;
+    flex-wrap: wrap;
+  }
+
+  .col-izq, .col-medio, .col-der {
+    flex: 1;
+    align-self: center;
+    text-align: center;
+    position: relative; /* Add position relative to the parent divs */
+
+  }
+
+  .col-izq img, .col-medio img, .col-der img {
+    border-radius: 10%;
+    margin-bottom: 10px;
+    max-width: 100%;
+    height: auto;
+    width: 80%;
+    margin-top: 50px;
+    color: transparent;
+    
+
+
+
+  }
+
+
+  .layer {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex; /* Add display flex to center the content */
+      justify-content: center; /* Add justify-content center to center the content */
+      align-items: center; /* Add align-items center to center the content */
+
+  }
+
+  
+.col-izq:hover img,
+.col-medio:hover img,
+.col-der:hover img {
+    filter: brightness(0.7); /* Set the brightness to 70% when hovering over the images */
 }
 
 
-.col-izq{
-    align-self: flex-start;
-    margin: 1%;
+  .layer h3 {
+     width: 100%;
+     font-weight: 500;
+     color: #fff;
+     font-size: 26px;
+     bottom: 0;
+     left: 50%;
+     transform: translateX(-50%);
+     position: absolute;
+     opacity: 0;
+     transition: 0.5s;
+  }
+
+  .layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+  }
+
+
+  .cta {
+    margin: 100px;
+    width: 80%;
+    /* background-image: linear-gradient(rgba(0,0,0,0.7,)rgba(0,0,0,0.7,)), url(../images/arquitecturaCeleste.jpg); */
+
+  }
+
+
+  
 
  
-}
-
-.col-izq img{
-    border-radius: 20px;
-    margin-bottom: 30px;
-    width: 100%;
-    height: auto;
-}
-
-.col-medio {
-    align-self: center;
-    margin: 1%;
-
-   
-}
-
-.col-medio img {
-    border-radius: 20px;
-    margin-bottom: 30px;
-    width: 100%;
-    height: auto; 
-}
-
-.col-der {
-    align-self:flex-end;
-    margin: 1%;
-
-   
-}
-
-.col-der img {
-    border-radius: 20px;
-    margin-bottom: 30px;
-    width: 100%;
-    height: auto; 
-}
 
 
-/* .shadow-effect {
-    background: #fff;
-    padding: 20px;
-    border-radius: 4px;
-    text-align: center;
-border:1px solid #ECECEC;
-    box-shadow: 0 19px 38px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.02);
-}  */
 
-/* #testimonials-list.owl-carousel .owl-dots .owl-dot.active span,
-#testimonials-list.owl-carousel .owl-dots .owl-dot:hover span {
-		    background: #3190E7;
-		    -webkit-transform: translate3d(0px, -50%, 0px) scale(0.7);
-		            transform: translate3d(0px, -50%, 0px) scale(0.7);
-		}
-#testimonials-list.owl-carousel .owl-dots{
-	display: inline-block;
-	width: 100%;
-	text-align: center;
-}
-#testimonials-list.owl-carousel .owl-dots .owl-dot{
-	display: inline-block;
-}
-		#testimonials-list.owl-carousel .owl-dots .owl-dot span {
-		    background: #3190E7;
-		    display: inline-block;
-		    height: 20px;
-		    margin: 0 2px 5px;
-		    -webkit-transform: translate3d(0px, -50%, 0px) scale(0.3);
-		            transform: translate3d(0px, -50%, 0px) scale(0.3);
-		    -webkit-transform-origin: 50% 50% 0;
-		            transform-origin: 50% 50% 0;
-		    transition: all 250ms ease-out 0s;
-		    width: 20px;
-		} */
